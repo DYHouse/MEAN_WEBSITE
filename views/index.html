@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/lib/angular/angular.js"></script>
+    <script src="/javascripts/index/controller.js"></script>
+</head>
+<body ng-controller="PhoneListCtrl">
+
+<ul>
+    <li ng-repeat="phone in phones">
+        {{phone.name}}
+        <p>{{phone.snippet}}</p>
+    </li>
+</ul>
+</body>
+
+</html>
